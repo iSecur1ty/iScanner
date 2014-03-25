@@ -1,0 +1,106 @@
+﻿$def with (session_name,fform)
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>iScanner CP | New Scan</title>
+	<link href="./static/assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="./static/assets/css/main.css" rel="stylesheet" type="text/css">
+	<link href="./static/assets/css/icons.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="./static/assets/css/fontawesome/font-awesome.min.css">
+	<script type="text/javascript" src="./static/assets/js/libs/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="./static/assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./static/assets/js/Chart.js"></script>
+
+
+
+<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+<body class="theme-bright breakpoint-1200" style="height: 259px;">
+	<header class="header navbar navbar-fixed-top" role="banner">
+		<div class="container">
+			<a class="navbar-brand" href="index">
+				<img src="./static/assets/img/logo.png" alt="logo">
+			</a>
+			<ul class="nav navbar-nav navbar-left">
+				<li>
+				</li>
+				<li class="dropdown user">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-male"></i>
+						<span class="username">My account</span>
+						<i class="icon-caret-down small"></i>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="logout"><i class="icon-key"></i>logout</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+				</li>		
+			</ul>
+			<ul class="nav navbar-nav">
+				<li class="nav-toggle"><a href="javascript:void(0);" title=""><i class="icon-reorder"></i></a></li>
+			</ul>
+		</div>
+		<div style="position: relative; margin-top: 0px; display: none;" id="project-switcher" class="container project-switcher">
+			<div id="scrollbar">
+				<div class="handle"></div>
+			</div>
+			<div style="position: relative; overflow: hidden; width: 100%; height: auto;" class="slimScrollDiv"><div style="overflow: hidden; width: 100%; height: auto;" id="frame">
+			</div><div style="background: none repeat scroll 0% 0% rgb(255, 255, 255); height: 5px; position: absolute; bottom: 1px; opacity: 0.2; display: block; border-radius: 5px; z-index: 99; left: 0px;" class="slimScrollBar ui-draggable"></div><div style="width: 100%; height: 5px; position: absolute; bottom: 1px; display: none; border-radius: 5px; background: none repeat scroll 0% 0% rgb(51, 51, 51); opacity: 0.2; z-index: 90;" class="slimScrollRail"></div></div> <!-- /#frame -->
+		</div>
+	</header>
+	<div class="fixed-header" id="container">
+		<div id="sidebar" class="sidebar-fixed">
+			<div style="height: 100%; overflow: hidden; position: relative; width: auto;" class="slimScrollDiv"><div style="overflow: hidden; width: auto; height: 100%;" id="sidebar-content">
+				<ul id="nav">
+					<li class="current">
+						<a href="/index">
+							<i class="icon-dashboard"></i>
+							Dashboard
+						</a>
+					</li>
+					<li>
+						<a href="/reports">
+							<i class="icon-bar-chart"></i> Reports</a>
+					</li>
+					<li>
+						<a href="/new_scan">
+							<i class="icon-desktop"></i> New Scan</a>
+					</li>
+				</ul>
+			<div class="fill-nav-space"></div><div class="fill-nav-space"></div><div class="fill-nav-space"></div><div class="fill-nav-space"></div></div><div style="background: none repeat scroll 0% 0% rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 626px;" class="slimScrollBar"></div><div style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: none repeat scroll 0% 0% rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;" class="slimScrollRail"></div></div>
+			<div id="divider" class="resizeable"></div>
+		</div>
+		<div id="content">
+			<div class="container">
+				<div class="page-header">
+					<div class="page-title">
+						<h3>New Scan</h3>
+						<span>welcome , $session_name</span>
+					</div>
+				</div>
+			<div class="row">
+					<div class="col-md-12">
+						<div class="widget box">
+							<div class="widget-header">
+								<h4 align="center">Start new scan &nbsp;<i class="icon-reorder"></i></h4>
+							</div>
+							 <div value="scan type">
+							  <div class="form-group">
+								  <form name="new scan" method="post">
+						       $if not fform.valid: <p class="error">Enter Your Scan Info</p>
+                               $:fform.render()
+							   
+								</form>
+								</div>
+								</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

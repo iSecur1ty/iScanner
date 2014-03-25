@@ -1,0 +1,137 @@
+$def with (f)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script>alert("incorrect username or password")</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>iScanner | Login Page</title>
+<style>
+	#footer {
+	width:100%;
+	height:30px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+	#footer {
+	background:#9E9E93;
+	border-top:1px solid #ff4b02;
+	color:#444;
+
+}
+	.login {
+  background-image: url("./static/assets/img/bg-img.png");
+  padding-top: 60px;
+  /* Helper */
+
+}
+	</style>
+	<!-- Bootstrap -->
+	<link href="./static/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- Theme -->
+	<link href="./static/assets/css/main.css" rel="stylesheet" type="text/css" />
+	<link href="./static/assets/css/plugins.css" rel="stylesheet" type="text/css" />
+	<link href="./static/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+	<link href="./static/assets/css/icons.css" rel="stylesheet" type="text/css" />
+
+	<!-- Login -->
+	<link href="./static/assets/css/login.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="./static/assets/css/fontawesome/font-awesome.min.css">
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="assets/css/fontawesome/font-awesome-ie7.min.css">
+	<![endif]-->
+
+	<!--[if IE 8]>
+		<link href="assets/css/ie8.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+	<!--=== JavaScript ===-->
+
+	<script type="text/javascript" src="./static/assets/js/libs/jquery-1.10.2.min.js"></script>
+
+	<script type="text/javascript" src="./static/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./static/assets/js/libs/lodash.compat.min.js"></script>
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="assets/js/libs/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- Beautiful Checkboxes -->
+	<script type="text/javascript" src="./static/plugins/uniform/jquery.uniform.min.js"></script>
+
+	<!-- Form Validation -->
+	<script type="text/javascript" src="./static/plugins/validation/jquery.validate.min.js"></script>
+
+	<!-- Slim Progress Bars -->
+	<script type="text/javascript" src="./static/plugins/nprogress/nprogress.js"></script>
+
+	<!-- App -->
+	<script type="text/javascript" src="./static/assets/js/login.js"></script>
+</head>
+
+<body class="login">
+	<!-- Logo -->
+	<div class="logo">
+		<img src="./static/assets/img/logo.png" alt="logo" />
+	</div>
+	<!-- /Logo -->
+
+	<!-- Login Box -->
+	<div class="box">
+		<div class="content">
+			<!-- Login Formular -->
+			<form class="form-vertical login-form"  method="post">
+				<!-- Title -->
+				<h3 class="form-title">iScanner Login information</h3>
+
+				<!-- Error Message -->
+				<div class="alert fade in alert-danger" style="display: none;">
+					<i class="icon-remove close" data-dismiss="alert"></i>
+					الرجاء اخل اسم المستخدم وكلمة المرور
+				</div>
+
+				<!-- Input Fields -->
+				<div class="form-group">
+					<!--<label for="username">Username:</label>-->
+					<div class="input-icon">
+						<div calss="col-md-10">
+							<div class="form-group">
+						$if not f.valid: <p class="error">Enter Your info</p>
+                        $:f.render()
+                        </div>
+                        </div>
+					</div>
+				</div>
+				<!-- /Input Fields -->
+
+				<!-- Form Actions -->
+				<div class="form-actions">
+					
+					<button type="submit" class="submit btn btn-primary pull-right">
+						Login <i class="icon-angle-right"></i>
+					</button>
+				</div>
+			</form>
+			<!-- /Login Formular -->
+
+		
+		</div> <!-- /.content -->
+
+	
+	</div>
+	<!-- /Login Box -->
+
+	
+
+	<!-- Footer -->
+	<div class="footer">
+		
+	</div>
+	<!-- /Footer -->
+</body>
+</html>
