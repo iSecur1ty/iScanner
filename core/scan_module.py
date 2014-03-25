@@ -17,13 +17,13 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.import web
 
-import web
-import time
+import web 
+import time 
 import os   
 import sys
-import MySQLdb #import this module for sql connection
-from termcolor import cprint,colored #import this module for Colored output
-import File_Collector #import collector module to collect all files 
+import MySQLdb 
+from termcolor import cprint,colored 
+import File_Collector #import collector module to collect files 
 from config import *
 report_name = sys.argv[3]
 reports = report_path + "/" + sys.argv[3] + "..html"
