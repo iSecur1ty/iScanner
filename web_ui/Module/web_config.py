@@ -21,9 +21,9 @@ mysql_host = "localhost"
 
 mysql_db = "iScanner"
 
-mysql_user = "root"
+mysql_user = ""
 
-mysql_pass = "123456789"
+mysql_pass = ""
 
 main_path = "/etc/iscanner/temp"
 
