@@ -20,7 +20,7 @@
 
 
 import os,sys,time,fnmatch
-from config import * #import some functions that used in this module
+from config import * #import some data that used in this module
 from banner import *
 
 if len(sys.argv) <= 3:
