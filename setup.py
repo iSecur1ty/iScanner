@@ -65,7 +65,8 @@ if platform.system() == 'Linux':
 		   print "Enter your mysql password :"
 		   os.system(sql)
 		   db.close()
-		except:
+		except MySQLdb.Error, e:
+			print "Error %d: %s" % (e.args[0], e.args[1])
 			print "[*]Error connection to Database"
 			print "[*]iScanner installer ShutDown"
 			sys.exit()			
