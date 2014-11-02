@@ -54,7 +54,7 @@ To use iScanner through Terminal you need to follow these steps:
 
 	4. Go to /iScanner/web_ui/Module/
 	5. Repeat step no.2 to edit web_config.py
-	6. In teh following section repeat the step no.3 to put your mysql_server-user and mysql-server-password between the quoation marks:
+	6. In the following section repeat the step no.3 to put your mysql_server-user and mysql-server-password between the quoation marks:
 
 		***			   ***
 			mysql_user = ""
