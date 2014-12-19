@@ -1,3 +1,46 @@
+This is a modified version of iScanner.
+I trie to make it more flexible, more orgenised, supports sqlite3, with one interface (starting console and web UI from the same file),
+and perhaps I'll add other features ... 
+
+---
+
+If you don't like it, please don't use it ^^ 
+but all critics are welcome ;)
+
+---
+
+To install this software you can do :
+
+python setup.py install [path]
+
+if the software already exists in the given path, 
+it will ask you to continue if you accept, then  the directory will be removed before installing the new version.
+you don't need an admin account to install this software, except when your OS doesn't contain a needed package or module.
+
+---
+
+before starting the program, you can use :
+
+python iscanner.py -h 
+
+I don't like the idea of storing mysql's password in config file, so in this version you must put your password each time you run it with mysql.
+
+---
+
+If you want to contact me, this is my tox id :
+
+3CF066FE118A84505EADADFE39E1BD966E12456559B35980C250C17EA388C979FE8E41A34546
+
+Or you can use this page :
+
+https://docs.google.com/forms/d/1oT2OvtgXL_z1ILDysadty8duJWNdJqjMJ6RDF7DEADw/viewform
+
+
+--
+
+The original text of Readme ...
+
+---
 =============================================================================
 iScanner - Free Linux Anti-Malware Software
 =============================================================================
