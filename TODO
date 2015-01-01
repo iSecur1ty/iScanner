@@ -1,0 +1,6 @@
+1- the SQLITE database is not completely converted 
+2- Mysql is not implemented, only sqlite is supported 
+3- some options are not implemented
+4- we need a standart format to save report, inorder to be able to use report in other projets
+5- the web UI must be intergrated on "iscanner.py", inorder to control all the application from this file
+6- Only "scan" command is implemented, we can add "config" to edit config file, "show" to show default configurations, and "server" to start web UI
